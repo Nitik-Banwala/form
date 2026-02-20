@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const STORAGE_KEY = "user_registry";
 
-const Form = () => {
+const Forminput = () => {
     const [users, setUsers] = useState([]);
     const [showPassword, setShowPassword] = useState(false);
     const [error, setError] = useState(false);
@@ -281,4 +281,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default Forminput;

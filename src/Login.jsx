@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 
 
 const Login = ({ onLogin }) => {
@@ -52,6 +52,11 @@ const Login = ({ onLogin }) => {
                     </button>
                     <button type="submit" onClick={(e) => handleSubmit(e)} className="border p-2 w-115 rounded-[112px]   text-[16px] font-normal pl-6 mt-3 bg-[#112D49] text-white">Login</button>
                 </form>
+                <h1 className="text-center text-[16px] text-[#41576D] mt-4">Don’t have an account?
+<Link to={"/"}>
+                    <span className=" text-center text-[16px] ml-1 text-[#112D49] font-bold cursor-pointer">Create account</span>
+                    </Link>
+                </h1>
             </div>
         </div>
     );

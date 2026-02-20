@@ -170,7 +170,7 @@ const Form = () => {
                     <button className="border p-2 w-115 rounded-[112px]   text-[16px] font-normal pl-6 mt-3 bg-[#112D49] text-white">
                         Submit
                     </button>
-                    <p className="mt-5 text-center text-[#41576D]">Already a member?  <Link to={"/login"}> <span className="text-[#112D49]">Log in</span>  </Link></p>
+                    <p className="mt-5 text-center text-[#41576D]">Already a member?  <Link to={"/login"}> <span className="text-[#112D49] font-bold">Log in</span>  </Link></p>
                 </form>
             </div>
         </div>
