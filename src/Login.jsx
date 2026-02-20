@@ -17,9 +17,6 @@ const Login = ({ onLogin }) => {
         return JSON.parse(localStorage.getItem("Users"))
     }
 
-
-   
-
     function handleSubmit(e) {
         e.preventDefault();
         navigate("/profile")

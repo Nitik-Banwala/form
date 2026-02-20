@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Form from "./Formapp";
+// import Form from "./Formapp";
 
 const Profile = () => {
     const navigate = useNavigate();
@@ -17,7 +17,6 @@ const Profile = () => {
         profilePicture: "",
     });
 
-
     const data = JSON.parse(localStorage.getItem("Users") || "null");
 
     useEffect(() => {
@@ -28,7 +27,7 @@ const Profile = () => {
             lastName: data[0]?.lastName || "",
             email: data[0]?.email || "",
             password: data[0]?.password || "",
-            confirmPassword: data[0]?.confirmPassword || "",
+            // confirmPassword: data[0]?.confirmPassword || "",
             profilePicture: data[0]?.profilePicture || "",
         });
     }, []);
